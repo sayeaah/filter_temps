@@ -397,6 +397,7 @@ th {
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  line-height: 1.5em;
 }
 
 html {
@@ -413,10 +414,8 @@ a {
   text-decoration: none;
 }
 
-.heading {
-  text-align: center;
-  color: #333;
-  font-size: 3rem;
+.header {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
