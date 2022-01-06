@@ -1,0 +1,24 @@
+mixin item()
+  li.faq__item&attributes(attributes)= name
+    .faq__item-wrapper
+      img.faq__image(src="assets/image/faq-q.svg" alt="question")
+      .faq__text-wrapper
+        .faq__label-wrapper
+          label.faq__label 質問タイトル
+        p.faq__text ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。
+    .faq__item-wrapper
+      img.faq__image(src="assets/image/faq-a.svg" alt="question")
+      .faq__text-wrapper
+        .faq__label-wrapper.faq__label-wrapper--answer
+          label.faq__label 回答タイトル
+        p.faq__text ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。
+.faq
+  .wrapper
+    .faq__wrapper
+      h2.faq__title よくあるご質問
+      ul.faq__list
+        +item()(class="faq__item--yellow")
+        +item()
+        //- +item()(class="faq__item--yellow")
+        //- +item()
+        //- +item()(class="faq__item--yellow")

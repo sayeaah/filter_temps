@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "KozGoPr6N-Regular";
+  src: url("/assets/fonts/KozGoPr6N-Regular.otf");
+}
+@font-face {
+  font-family: "Ryumin-Heavy";
+  src: url("/assets/fonts/A-OTFRyuminProH-KL.otf");
+}
+@font-face {
+  font-family: "Ryumin-Bold";
+  src: url("/assets/fonts/A-OTFRyuminProB-KL.otf");
+}
+@font-face {
+  font-family: "HGS-Gothic-E";
+  src: url("/assets/fonts/HGSGothicE.otf");
+}
+@font-face {
+  font-family: "HGSSoeiKakugothicUB";
+  src: url("/assets/fonts/HGSSoeiKakugothicUB.otf");
+}
+@font-face {
+  font-family: "GothicMB101";
+  src: url("/assets/fonts/A-OTFGothicMB101ProB.otf");
+}
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS and IE text size adjust after device orientation change,
@@ -403,6 +427,8 @@ th {
 html {
   height: 100%;
   font-size: 10px;
+  font-family: "KozGoPr6N-Regular", sans-serif;
+  background: url("/assets/image/main-bg.svg");
 }
 
 ul,
@@ -416,6 +442,283 @@ a {
 
 .header {
   width: 100%;
+  height: 95px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 40px 0 55px;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    height: 15.8vw;
+    padding: 0 6.6vw 0 9.1vw;
+  }
+}
+.header__text {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "KozGoPr6N-Regular", sans-serif;
+  font-weight: normal;
+}
+@media screen and (max-width: 600px) {
+  .header__text {
+    font-size: 3.3vw;
+  }
+}
+.header__wrapper {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/*# sourceMappingURL=style.css.map */
+.ratings__wrapper {
+  padding: 10px 30px;
+  background-color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .ratings__wrapper {
+    padding: 1.6vw 5vw;
+  }
+}
+.ratings__title {
+  margin-bottom: 25px;
+  color: #727171;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 600px) {
+  .ratings__title {
+    margin-bottom: 4.1vw;
+    font-size: 2.5vw;
+  }
+}
+.ratings__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 186px;
+  background: url(/assets/image/ratings-left.svg) no-repeat, url(/assets/image/ratings-right.svg) no-repeat;
+  background-position: left center, right center;
+  background-size: contain, contain;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .ratings__item {
+    width: 31vw;
+  }
+}
+.ratings__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ratings__label {
+  font-family: "Ryumin-Heavy", sans-serif;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 600px) {
+  .ratings__label {
+    font-size: 3vw;
+  }
+}
+.ratings__rate {
+  text-align: center;
+  font-family: "Ryumin-Bold", sans-serif;
+  font-size: 4.4rem;
+  line-height: 3.5rem;
+}
+@media screen and (max-width: 600px) {
+  .ratings__rate {
+    font-size: 7.3vw;
+    line-height: 5.8vw;
+  }
+}
+.ratings__rate--sm {
+  font-size: 1.7rem;
+}
+@media screen and (max-width: 600px) {
+  .ratings__rate--sm {
+    font-size: 2.8vw;
+  }
+}
+.ratings__image {
+  width: 100px;
+  position: absolute;
+  bottom: 100%;
+}
+@media screen and (max-width: 600px) {
+  .ratings__image {
+    width: 16.6vw;
+  }
+}
+
+.faq__wrapper {
+  background-color: #fff;
+}
+.faq__title {
+  font-family: "GothicMB101", sans-serif;
+  font-size: 2.9rem;
+  padding: 15px 0;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .faq__title {
+    font-size: 4.8vw;
+    padding: 2.5vw 0;
+  }
+}
+.faq__item {
+  padding: 15px 30px;
+}
+@media screen and (max-width: 600px) {
+  .faq__item {
+    padding: 2.5vw 1.6vw;
+  }
+}
+.faq__item--yellow {
+  background-color: #ffffd2;
+}
+.faq__item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+@media screen and (max-width: 600px) {
+  .faq__item-wrapper {
+    padding-left: 7vw;
+  }
+}
+.faq__item-wrapper:first-child {
+  margin-bottom: 12px;
+  padding: 0 30px 0 0;
+}
+@media screen and (max-width: 600px) {
+  .faq__item-wrapper:first-child {
+    margin-bottom: 2vw;
+    padding: 0 7vw 0 0;
+  }
+}
+.faq__image {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 600px) {
+  .faq__image {
+    width: 8.3vw;
+    height: 8.3vw;
+    margin-right: 3.3vw;
+  }
+}
+.faq__text {
+  font-family: "HGS-Gothic-E", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 3px;
+}
+@media screen and (max-width: 600px) {
+  .faq__text {
+    font-size: 2.1vw;
+    margin-top: 0.5vw;
+  }
+}
+.faq__label-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.faq__label-wrapper::before {
+  content: "";
+  display: block;
+  margin-left: 17px;
+  width: 165px;
+  height: 13px;
+  background-color: #fff100;
+  position: absolute;
+  bottom: 0;
+}
+@media screen and (max-width: 600px) {
+  .faq__label-wrapper::before {
+    margin-left: 2.8vw;
+    width: 27.5vw;
+    height: 2.1vw;
+  }
+}
+.faq__label-wrapper--answer::before {
+  content: "";
+  background-color: #ffd82d;
+}
+.faq__label {
+  font-family: "HGSSoeiKakugothicUB", sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 600px) {
+  .faq__label {
+    font-size: 2.8vw;
+    line-height: 2.8vw;
+  }
+}
+
+.reviews__wrapper {
+  padding: 30px 0;
+  background-color: #ffffd2;
+  border-radius: 25px;
+  margin: 0 20px;
+  box-shadow: 0 0 20px #ffffd2;
+}
+.reviews__list {
+  padding: 0 5px;
+}
+.reviews__item {
+  position: relative;
+  z-index: 1;
+  padding-left: 31px;
+}
+.reviews__item::before {
+  content: "";
+  position: absolute;
+  background: transparent url(/assets/image/review-right.svg) no-repeat;
+  background-size: contain;
+  right: 0;
+  width: 31px;
+  height: 31px;
+  top: -23px;
+  z-index: -1;
+}
+.reviews__item--left {
+  padding-left: 0;
+  padding-right: 31px;
+}
+.reviews__item--left::before {
+  content: "";
+  background-image: url(/assets/image/review-left.svg);
+  right: initial;
+  left: 0;
+}
+.reviews__text {
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin-bottom: 25px;
+  box-shadow: 3px 4px 3px rgba(35, 86, 71, 0.75);
+  text-align: center;
+  background-color: #fff;
+  font-size: 2rem;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.wrapper--white {
+  background-color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin: 0 6.7vw;
+  }
+}

@@ -1,3 +1,42 @@
 //color
 $white: #fff;
 $black: #000;
+
+// font-face
+@font-face {
+  font-family: 'KozGoPr6N-Regular';
+  src: url('/assets/fonts/KozGoPr6N-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Ryumin-Heavy';
+  src: url('/assets/fonts/A-OTFRyuminProH-KL.otf');
+}
+
+@font-face {
+  font-family: 'Ryumin-Bold';
+  src: url('/assets/fonts/A-OTFRyuminProB-KL.otf');
+}
+
+@font-face {
+  font-family: 'HGS-Gothic-E';
+  src: url('/assets/fonts/HGSGothicE.otf');
+}
+
+@font-face {
+  font-family: 'HGSSoeiKakugothicUB';
+  src: url('/assets/fonts/HGSSoeiKakugothicUB.otf');
+}
+
+@font-face {
+  font-family: 'GothicMB101';
+  src: url('/assets/fonts/A-OTFGothicMB101ProB.otf');
+}
+
+//font-family
+$kg-regular: 'KozGoPr6N-Regular', sans-serif;
+$ryumin-heavy: 'Ryumin-Heavy', sans-serif;
+$ryumin-bold: 'Ryumin-Bold', sans-serif;
+$hgs-gothic: 'HGS-Gothic-E', sans-serif;
+$hgs-soei: 'HGSSoeiKakugothicUB', sans-serif;
+$gothic-mb-101: 'GothicMB101', sans-serif;

@@ -1,0 +1,85 @@
+.ratings {
+  &__wrapper {
+    padding: 10px 30px;
+    background-color: $white;
+
+    @media screen and (max-width: 600px) {
+      padding: 1.6vw 5vw;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    color: #727171;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.5rem;
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: 4.1vw;
+      font-size: 2.5vw;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 186px;
+    background: url(/assets/image/ratings-left.svg) no-repeat, url(/assets/image/ratings-right.svg) no-repeat;
+    background-position: left center, right center;
+    background-size: contain, contain;
+    position: relative;
+
+    @media screen and (max-width: 600px) {
+      width: 31vw;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-family: $ryumin-heavy;
+    font-size: 1.8rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 3vw;
+    }
+  }
+
+  &__rate {
+    text-align: center;
+    font-family: $ryumin-bold;
+    font-size: 4.4rem;
+    line-height: 3.5rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 7.3vw;
+      line-height: 5.8vw;
+    }
+
+    &--sm {
+      font-size: 1.7rem;
+
+      @media screen and (max-width: 600px) {
+        font-size: 2.8vw;
+      }
+    }
+  }
+
+  &__image {
+    width: 100px;
+    position: absolute;
+    bottom: 100%;
+
+    @media screen and (max-width: 600px) {
+      width: 16.6vw;
+    }
+  }
+}
