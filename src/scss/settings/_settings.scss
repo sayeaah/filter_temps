@@ -29,9 +29,15 @@ $black: #000;
 }
 
 @font-face {
-  font-family: 'GothicMB101';
+  font-family: 'GothicMB101-Bold';
   src: url('/assets/fonts/A-OTFGothicMB101ProB.otf');
 }
+
+@font-face {
+  font-family: 'GothicMB101-Medium';
+  src: url('/assets/fonts/A-OTFGothicMB101ProM.otf');
+}
+
 
 //font-family
 $kg-regular: 'KozGoPr6N-Regular', sans-serif;
@@ -39,4 +45,5 @@ $ryumin-heavy: 'Ryumin-Heavy', sans-serif;
 $ryumin-bold: 'Ryumin-Bold', sans-serif;
 $hgs-gothic: 'HGS-Gothic-E', sans-serif;
 $hgs-soei: 'HGSSoeiKakugothicUB', sans-serif;
-$gothic-mb-101: 'GothicMB101', sans-serif;
+$gothic-mb-101: 'GothicMB101-Bold', sans-serif;
+$gothic-mb-101-medium: 'GothicMB101-Medium', sans-serif;

@@ -18,19 +18,34 @@
         <div class="wrapper wrapper--white">
           <div class="ratings__wrapper">
             <h2 class="ratings__title">おいしいけど○○が気になる。<br>そんな方のために○○○○と○○○○○を考えて作りました。</h2>
-            <ul class="ratings__list">
-              <li class="ratings__item"><img class="ratings__image" src="assets/image/ratings-crown.svg" alt="crown">
-                <p class="ratings__text"><span class="ratings__label">おすすめ度</span>
-                  <p class="ratings__rate">100<span class="ratings__rate ratings__rate--sm">%</span></p>
-                </p>
-              </li>
-            </ul>
+            <div class="ratings__content">
+              <div class="ratings__item-container ratings__item-container--full">
+                <div class="ratings__item"><img class="ratings__image" src="assets/image/ratings-crown.svg" alt="crown">
+                  <p class="ratings__text"><span class="ratings__label">おすすめ度</span>
+                    <p class="ratings__rate">100<span class="ratings__rate ratings__rate--sm">%</span></p>
+                  </p>
+                </div>
+              </div>
+              <div class="ratings__item-container">
+                <div class="ratings__item"><img class="ratings__image" src="assets/image/ratings-crown.svg" alt="crown">
+                  <p class="ratings__text"><span class="ratings__label">続けやすさ</span>
+                    <p class="ratings__rate">97.5<span class="ratings__rate ratings__rate--sm">%</span></p>
+                  </p>
+                </div>
+                <div class="ratings__item"><img class="ratings__image" src="assets/image/ratings-crown.svg" alt="crown">
+                  <p class="ratings__text"><span class="ratings__label">お客様満足度</span>
+                    <p class="ratings__rate">98.2<span class="ratings__rate ratings__rate--sm">%</span></p>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="reviews">
         <div class="wrapper wrapper--white"> 
-          <div class="reviews__wrapper">
+          <div class="reviews__wrapper"><img class="reviews__image" src="assets/image/reviews-characters.svg" alt="characters">
+            <h2 class="reviews__heading">お客様の声</h2>
             <ul class="reviews__list">
               <li class="reviews__item">
                 <p class="reviews__text">お客様の声○○○○○○○○○○○○</p>
@@ -38,7 +53,28 @@
               <li class="reviews__item reviews__item--left">
                 <p class="reviews__text">お客様の声○○○○○○○○○○○○</p>
               </li>
+              <li class="reviews__item">
+                <p class="reviews__text">お客様の声○○○○○○○○○○○○</p>
+              </li>
+              <li class="reviews__item reviews__item--left">
+                <p class="reviews__text">お客様の声○○○○○○○○○○○○</p>
+              </li>
+              <li class="reviews__item">
+                <p class="reviews__text">お客様の声○○○○○○○○○○○○</p>
+              </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="wrapper wrapper--white">
+          <div class="video__heading-wrapper">
+            <h2 class="video__heading js-curved-heading">動画でご紹介タイトル</h2>
+          </div>
+          <div class="video__wrapper">
+            <div class="video__border">
+              <div class="blank-container"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -83,10 +119,80 @@
                         </div>
                       </div>
                     </li>
+                    <li class="faq__item faq__item--yellow">
+                      <div class="faq__item-wrapper"><img class="faq__image" src="assets/image/faq-q.svg" alt="question">
+                        <div class="faq__text-wrapper">
+                          <div class="faq__label-wrapper">
+                            <label class="faq__label">質問タイトル</label>
+                          </div>
+                          <p class="faq__text">ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。</p>
+                        </div>
+                      </div>
+                      <div class="faq__item-wrapper"><img class="faq__image" src="assets/image/faq-a.svg" alt="question">
+                        <div class="faq__text-wrapper">
+                          <div class="faq__label-wrapper faq__label-wrapper--answer">
+                            <label class="faq__label">回答タイトル</label>
+                          </div>
+                          <p class="faq__text">ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="faq__item">
+                      <div class="faq__item-wrapper"><img class="faq__image" src="assets/image/faq-q.svg" alt="question">
+                        <div class="faq__text-wrapper">
+                          <div class="faq__label-wrapper">
+                            <label class="faq__label">質問タイトル</label>
+                          </div>
+                          <p class="faq__text">ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。</p>
+                        </div>
+                      </div>
+                      <div class="faq__item-wrapper"><img class="faq__image" src="assets/image/faq-a.svg" alt="question">
+                        <div class="faq__text-wrapper">
+                          <div class="faq__label-wrapper faq__label-wrapper--answer">
+                            <label class="faq__label">回答タイトル</label>
+                          </div>
+                          <p class="faq__text">ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="faq__item faq__item--yellow">
+                      <div class="faq__item-wrapper"><img class="faq__image" src="assets/image/faq-q.svg" alt="question">
+                        <div class="faq__text-wrapper">
+                          <div class="faq__label-wrapper">
+                            <label class="faq__label">質問タイトル</label>
+                          </div>
+                          <p class="faq__text">ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。</p>
+                        </div>
+                      </div>
+                      <div class="faq__item-wrapper"><img class="faq__image" src="assets/image/faq-a.svg" alt="question">
+                        <div class="faq__text-wrapper">
+                          <div class="faq__label-wrapper faq__label-wrapper--answer">
+                            <label class="faq__label">回答タイトル</label>
+                          </div>
+                          <p class="faq__text">ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。ここに質問を入力してください。</p>
+                        </div>
+                      </div>
+                    </li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="pr">
+        <div class="wrapper">
+          <div class="pr__wrapper">
+            <h2 class="pr__heading">会社PR欄</h2>
+            <div class="pr__content">
+              <div class="pr__image-wrapper"><img src="" alt="" onerror="this.style.display='none'"></div>
+              <div class="pr__text">これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer class="footer">
+      <p class="footer__copyright">efs corporation</p>
+    </footer>
+    <script src="assets/js/circletype.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

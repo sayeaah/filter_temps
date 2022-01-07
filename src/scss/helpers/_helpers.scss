@@ -10,3 +10,12 @@
     margin: 0 6.7vw;
   }
 }
+
+.blank-container {
+  background-color: $white;
+  height: 400px;
+
+  @media screen and (max-width: 600px) {
+    height: 50vw;
+  }
+}

@@ -1,20 +1,64 @@
 .reviews {
   &__wrapper {
+    background: linear-gradient(#ffffd2, #ffffd2) no-repeat,
+                url(/assets/image/reviews-bg.svg) no-repeat;
     padding: 30px 0;
-    background-color: #ffffd2;
     border-radius: 25px;
     margin: 0 20px;
-    box-shadow: 0 0 20px rgba($color: #ffffd2, $alpha: 1);
+    background-size: 75% 75%, cover;
+    background-position: center;
+
+
+    @media screen and (max-width: 600px) {
+      padding: 5vw 0;
+      border-radius: 4.1vw;
+      margin: 0 3.3vw;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    width: 375px;
+    height: auto;
+
+    @media screen and (max-width: 600px) {
+      margin: 0 auto;
+      width: 62.5vw;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: 2.9rem;
+    margin-bottom: 20px;
+    font-family: $gothic-mb-101;
+
+    @media screen and (max-width: 600px) {
+      font-size: 4.8vw;
+      margin-bottom: 3.3vw;
+    }
   }
 
   &__list {
     padding: 0 5px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 600px) {
+      padding: 0 0.8vw;
+      margin: 0 auto;
+    }
   }
 
   &__item {
     position: relative;
     z-index: 1;
     padding-left: 31px;
+
+    @media screen and (max-width: 600px) {
+      padding-left: 5.1vw;
+    }
 
     &::before {
       content: '';
@@ -26,11 +70,22 @@
       height: 31px;
       top: -23px;
       z-index: -1;
+
+      @media screen and (max-width: 600px) {
+        right: 0;
+        width: 5.1vw;
+        height: 5.1vw;
+        top: -3.6vw;
+      }
     }
 
     &--left {
       padding-left: 0;
       padding-right: 31px;
+
+      @media screen and (max-width: 600px) {
+        padding-right: 5.1vw;
+      }
 
       &::before {
         content: '';
@@ -43,11 +98,20 @@
 
   &__text {
     border-radius: 10px;
-    padding: 5px 15px;
+    padding: 7px 15px;
     margin-bottom: 25px;
     box-shadow: 3px 4px 3px rgba($color: #235647, $alpha: 0.75);
+    font-size: 2rem;
     text-align: center;
     background-color: $white;
-    font-size: 2rem;
+    font-family: $gothic-mb-101-medium;
+
+    @media screen and (max-width: 600px) {
+      border-radius: 1.6;
+      padding: 1.1vw 2.5vw;
+      margin-bottom: 4.1vw;
+      box-shadow: 0.5vw 0.6vw 0.5vw rgba($color: #235647, $alpha: 0.75);
+      font-size: 3.3vw;
+    }
   }
 }
