@@ -1,0 +1,54 @@
+.faq {
+  &__wrapper {
+    padding: 30px 0;
+
+    @media screen and (max-width: 600px) {
+      padding: 5vw 0;
+    }
+  }
+
+  &__list {
+    margin: 0 auto;
+    max-width: 385px;
+    padding: 5px 10px;
+
+    @media screen and (max-width: 600px) {
+      max-width: 64.1vw;
+      padding: 0.8vw 1.6vw;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+
+      @media screen and (max-width: 600px) {
+        margin-bottom: 4.1vw;
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    color: $dark-green;
+    font-family: $yugo;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 3vw;
+      margin-bottom: 0.8vw;
+    }
+  }
+
+  &__text {
+    font-family: $yugo;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2vw;
+    }
+  }
+}

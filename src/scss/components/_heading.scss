@@ -1,0 +1,32 @@
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid $dark-green;
+  border-bottom: 0;
+  font-family: $yugo;
+  font-weight: 500;
+  margin: 0 auto;
+  font-size: 3rem;
+  width: 385px;
+  height: 105px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 5vw;
+    width: 64.1vw;
+    height: 17.5vw;
+  }
+
+  span {
+    font-size: 1.4rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.3vw;
+    }
+  }
+
+  &--bottom {
+    justify-content: flex-end;
+  }
+}
