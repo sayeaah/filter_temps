@@ -1,6 +1,6 @@
 .card {
   &__wrapper {
-    background: url(/assets/image/card-bg.svg) no-repeat;
+    background: url(../image/card-bg.svg) no-repeat;
     background-size: 100%;
     background-position: center;
     display: flex;
@@ -83,7 +83,7 @@
 
   &__shipping {
     display: inline-block;
-    background: url(/assets/image/shipping-bg.svg) no-repeat;
+    background: url(../image/shipping-bg.svg) no-repeat;
     background-size: cover;
     font-family: $yumin;
     color: $white;
@@ -96,7 +96,7 @@
     margin-left: 18px;
 
     @media screen and (max-width: 600px) {
-      font-size: 5vw;
+      font-size: 4.8vw;
       line-height: 5.1vw;
       width: 11.6vw;
       height: 11.6vw;
