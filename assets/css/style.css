@@ -1530,7 +1530,7 @@ a {
 @media screen and (max-width: 600px) {
   .product__item {
     width: 75vw;
-    padding: 3.3vw 3.3vw 6.6vw 20vw;
+    padding: 3.3vw 3.3vw 6vw 20vw;
   }
 }
 .product__item:not(:last-child) {
@@ -1586,8 +1586,8 @@ a {
 }
 @media screen and (max-width: 600px) {
   .product__image {
-    height: 108.3vw;
-    top: 6.6vw;
+    height: 109vw;
+    top: 10vw;
   }
 }
 .product__image--bottom {
@@ -1599,7 +1599,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   .product__image--bottom {
-    bottom: 1.1vw;
+    bottom: 0;
   }
 }
 
