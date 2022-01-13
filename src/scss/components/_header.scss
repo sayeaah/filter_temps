@@ -4,10 +4,10 @@
   justify-content: flex-start;
   background-color: $white;
   width: 100%;
-  height: 85px;
+  height: 80px;
 
   @media screen and (max-width: 600px) {
-    height: 14.1vw;
+    height: 13.3vw;
   }
 
   &__text {
@@ -19,6 +19,11 @@
     @media screen and (max-width: 600px) {
       font-size: 3.3vw;
       padding: 0 9.1vw;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin: 0 auto;
+      max-width: 800px;
     }
   }
 }

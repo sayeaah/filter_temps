@@ -1,0 +1,21 @@
+mixin item
+  li.product__item&attributes(attributes)= name
+    p.product__title efsフェイシャルクリームの利点が、
+      br
+      | 見出しが入ります。
+    p.product__text これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。
+
+section.product
+  .wrapper
+    .product__wrapper
+      h2.product__heading こんなに違います。
+        br
+        | 願を叶える efsフェイシャルクリーム。
+      ul.product__list
+        +item()
+        +item()
+        +item()(class="product__item--left")
+        +item()(class="product__item--left")
+        +item()(class="product__item--left")
+      img.product__image(src="assets/image/product.svg" alt="product")
+      img.product__image.product__image--bottom(src="assets/image/product.svg" alt="product")

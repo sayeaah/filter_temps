@@ -1,0 +1,86 @@
+.badge {
+  &__wrapper {
+    background: url(/assets/image/badge.svg) no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    padding: 20px 0px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 600px) {
+      width: 21.6vw;
+      padding: 3.3vw 0;
+    }
+  }
+
+  &__rating {
+    font-family: $yumin;
+    font-weight: 600;
+    font-size: 1.4rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.3vw;
+    }
+  }
+
+  &__text {
+    font-family: $yumin;
+    font-weight: 600;
+    font-size: 0.8rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.3vw;
+    }
+  }
+
+  &__count {
+    font-family: $ryumin;
+    background: url(/assets/image/gold-bg.svg) no-repeat;
+    background-position: top;
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 1px #474646);
+    margin-top: -5px;
+    font-size: 4rem;
+    line-height: 4rem;
+
+    @media screen and (max-width: 600px) {
+      margin-top: -0.8vw;
+      font-size: 6.6vw;
+      line-height: 6.6vw;
+    }
+  }
+
+  &__pieces {
+    font-family: $ryumin;
+    background: url(/assets/image/gold-bg.svg) no-repeat;
+    background-position: right;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 1px #474646);
+    font-size: 1.8rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 3vw;
+    }
+  }
+
+  &__date {
+    font-family: $yumin;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: -4px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.3vw;
+      margin-top: -0.6vw;
+    }
+  }
+}

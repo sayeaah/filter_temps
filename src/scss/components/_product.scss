@@ -1,0 +1,112 @@
+.product {
+  &__wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 42px 0;
+    position: relative;
+
+    @media screen and (max-width: 600px) {
+      padding: 7vw 0;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: $yugo;
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-size: 2.7rem;
+    margin-bottom: 40px;
+    margin-left: 115px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 4.5vw;
+      margin-bottom: 6.6vw;
+      margin-left: 19.1vw;
+    }
+  }
+
+  &__item {
+    margin: 0 auto;
+    width: 450px;
+    border-right: 1px solid #51a6a6;
+    border-bottom: 1px solid #51a6a6;
+    padding: 20px 20px 40px 100px;
+
+    @media screen and (max-width: 600px) {
+      width: 75vw;
+      padding: 3.3vw 3.3vw 6.6vw 20vw;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 70px;
+
+      @media screen and (max-width: 600px) {
+        margin-bottom: 11.6vw;
+      }
+    }
+
+    &--left {
+      border-right: 0;
+      border-left: 1px solid #51a6a6;
+      padding-left: 30px;
+      padding-right: 90px;
+
+      @media screen and (max-width: 600px) {
+        padding-left: 5vw;
+        padding-right: 18vw;
+      }
+    }
+  }
+
+  &__title {
+    font-family: $yugo;
+    font-weight: bold;
+    color: $dark-green;
+    font-size: 1.9rem;
+    margin-bottom: 12px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 3.1vw;
+      margin-bottom: 2vw;
+    }
+  }
+
+  &__text {
+    font-family: $yugo;
+    font-weight: 500;
+    font-size: 1.3rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.1vw;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    width: auto;
+    height: 650px;
+    top: 40px;
+    transform: rotate(-9deg);
+    left: -9%;
+
+    @media screen and (max-width: 600px) {
+      height: 108.3vw;
+      top: 6.6vw;
+    }
+
+    &--bottom {
+      top: initial;
+      transform: rotate(9deg);
+      bottom: 7px;
+      left: initial;
+      right: -8%;
+
+      @media screen and (max-width: 600px) {
+        bottom: 1.1vw;
+      }
+    }
+  }
+}

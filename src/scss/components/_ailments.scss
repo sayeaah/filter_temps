@@ -2,26 +2,28 @@
   position: relative;
 
   &__wrapper {
+    max-width: 600px;
+    margin: 0 auto;
     background: url(/assets/image/ailments-img.svg) no-repeat;
     background-size: 430px auto;
-    padding: 30px 22px 40px;
+    padding: 30px 22px;
 
     @media screen and (max-width: 600px) {
       background-size: 71.6vw auto;
-      padding: 5vw 3.6vw 6.7vw;
+      padding: 5vw 3.6vw;
     }
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px 10px;
+    gap: 50px 10px;
     padding: 0 30px;
     position: relative;
     z-index: 1;
 
     @media screen and (max-width: 600px) {
-      gap: 6.7vw 10px;
+      gap: 8.3vw 10px;
       padding: 0 5vw;
     }
   }
@@ -91,7 +93,7 @@
     text-align: left;
 
     @media screen and (max-width: 600px) {
-      font-size: 5vw;
+      font-size: 4.9vw;
     }
   }
 
@@ -104,6 +106,18 @@
 
     @media screen and (max-width: 600px) {
       font-size: 2.3vw;
+    }
+  }
+
+  .arrow-down {
+    position: absolute;
+    bottom: -2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 69px;
+
+    @media screen and (max-width: 600px) {
+      width: 11.5vw;
     }
   }
 }

@@ -1,11 +1,11 @@
 .video {
   &__wrapper {
-    margin: 30px auto 15px;
+    margin: 20px auto 15px;
     max-width: 405px;
 
     @media screen and (max-width: 600px) {
       max-width: 67.5vw;
-      margin: 5vw auto 2.5vw;
+      margin: 3.3vw auto 2.5vw;
     }
   }
 

@@ -1,9 +1,9 @@
 .pr {
   &__wrapper {
-    padding: 50px;
+    padding: 45px 50px 20px;
 
     @media screen and (max-width: 600px) {
-      padding: 8.3vw;
+      padding: 7.5vw 8.3vw 3.3vw;
     }
   }
 
@@ -17,6 +17,10 @@
     @media screen and (max-width: 600px) {
       margin-top: 5vw;
       max-width: 64.1vw;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 550px;
     }
   }
 
@@ -52,6 +56,10 @@
 
     @media screen and (max-width: 600px) {
       font-size: 2.1vw;
+    }
+
+    @media screen and (min-width: 768px) {
+      -webkit-line-clamp: 13;
     }
   }
 }

@@ -1,0 +1,30 @@
+.sns {
+  &__wrapper {
+    background: url(/assets/image/sns-bg.svg);
+    background-position: left;
+    background-size: cover;
+    padding: 44px 0 54px;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+      padding: 7.3vw 0 9vw;
+    }
+  }
+
+  &__container {
+    background-color: $white;
+    margin: 0 auto;
+    margin-top: 3px;
+    width: 326px;
+    height: auto;
+
+    @media screen and (max-width: 600px) {
+      margin-top: 0.5vw;
+      width: 54.3vw;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

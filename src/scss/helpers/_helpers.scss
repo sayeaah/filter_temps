@@ -2,3 +2,51 @@
   max-width: 800px;
   margin: 0 auto;
 }
+
+.justify-text {
+  text-align: justify;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.pink {
+  color: #c30065;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 5.8vw;
+  }
+}
+
+.mt-10 {
+  margin-top: 10px;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 1.6vw;
+  }
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+
+  @media screen and (max-width: 600px) {
+    padding-bottom: 4.1vw;
+  }
+}

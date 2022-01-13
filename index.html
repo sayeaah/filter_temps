@@ -6,37 +6,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>FILTERPH</title>
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&amp;display=swap" rel="stylesheet">
   </head>
   <body> 
     <header class="header">
-      <div class="wrapper">
-        <h1 class="header__text">●基礎化粧品系　efsフェイシャルクリーム</h1>
-      </div>
+      <h1 class="header__text">●基礎化粧品系　efsフェイシャルクリーム</h1>
     </header>
     <main> 
+      <section class="banner">
+        <div class="wrapper">
+          <div class="banner__wrapper">
+            <div class="banner__badge-wrapper">
+              <div class="badge">
+                <div class="badge__wrapper">
+                  <p class="badge__rating">満足度98％</p>
+                  <p class="badge__text">○○シリーズ累計販売実績</p><span class="badge__count">445</span><span class="badge__pieces">万個</span>
+                </div>
+                <p class="badge__date">※2010/1/1〜2021/1/30時点当社調べ</p>
+              </div>
+            </div>
+            <div class="banner__product-wrapper"><img class="banner_product" src="assets/image/product.svg" alt="product"></div>
+            <div class="banner__text-wrapper">
+              <p class="banner__text">なめらかな肌<br>うるおい満ちる</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrapper">
+          <p class="section__text">水溶性コラーゲン・浸透性コラーゲン・ピココラーゲンという3種のコラーゲンとヒアルロン酸が浸透。コットンを使わずに、お肌への浸透を手のひらでしっかり確かめながらお手入れをしていただくのがおすすめ。触れると指が吸いつくように、みずみずしいうるおいを肌にかなえます。</p>
+        </div>
+      </section>
+      <section class="product-cards">
+        <div class="product-cards__wrapper">
+          <div class="card card--with-label mb-35">
+            <div class="card__wrapper">
+              <div class="card__product-wrapper"><img src="assets/image/product.svg" alt="product"></div>
+              <div class="card__text-wrapper">
+                <label class="card__label"><初回限定>特別価格キャンペーン</label>
+                <p class="card__product-name">efsフェイシャルクリーム<span> (00g)</span></p>
+                <div class="flex align-center">
+                  <p class="card__regular-price">通常価格<br>0,000円 ▶</p><span class="card__special-price pink">特別価格</span>
+                  <div class="card__price-wrapper card__price-wrapper--sm"><span class="card__price pink">0,000</span>
+                    <div class="flex flex-column"><span class="card__tax">(税込)</span><span class="card__yen pink">円</span></div>
+                  </div>
+                  <p class="card__shipping card__shipping--sm">送料無料</p>
+                </div>
+                <button class="button mt-10"><span class="button__text">ご購入はこちら　></span><span class="button__text button__text--shadow">ご購入はこちら　></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__wrapper">
+              <div class="card__product-wrapper"><img src="assets/image/product.svg" alt="product"></div>
+              <div class="card__text-wrapper">
+                <p class="card__product-name">efsフェイシャルクリーム<span> (00g)</span></p>
+                <div class="flex align-start mt-10">
+                  <div class="card__price-wrapper"><span class="card__price">0,000</span>
+                    <div class="flex flex-column"><span class="card__tax">(税込)</span><span class="card__yen">円</span></div>
+                  </div>
+                  <p class="card__shipping">送料無料</p>
+                </div>
+                <button class="button"><span class="button__text button__text--shadow">ご購入はこちら　></span><span class="button__text">ご購入はこちら　></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="ailments">
         <div class="ailments__overlay"></div>
+        <div class="ailments__wrapper">
+          <div class="ailments__title-wrapper">
+            <h2 class="ailments__title">こんなお悩み<br>抱えていませんか？</h2>
+          </div>
+          <ul class="ailments__list">
+            <li class="ailments__item">
+              <p class="ailments__text">お悩み内容が入ります。<br>これはコピーです。</p>
+            </li>
+            <li class="ailments__item">
+              <p class="ailments__text">お悩み内容が入ります。<br>これはコピーです。</p>
+            </li>
+            <li class="ailments__item">
+              <p class="ailments__text">お悩み内容が入ります。<br>これはコピーです。</p>
+            </li>
+            <li class="ailments__item">
+              <p class="ailments__text">お悩み内容が入ります。<br>これはコピーです。</p>
+            </li>
+            <li class="ailments__item">
+              <p class="ailments__text">お悩み内容が入ります。<br>これはコピーです。</p>
+            </li>
+          </ul>
+        </div><img class="arrow-down" src="assets/image/arrow.svg" alt="arrow">
+      </section>
+      <section class="product">
         <div class="wrapper">
-          <div class="ailments__wrapper">
-            <div class="ailments__title-wrapper">
-              <h2 class="ailments__title">こんなお悩み<br>抱えていませんか？</h2>
+          <div class="product__wrapper">
+            <h2 class="product__heading">こんなに違います。<br>願を叶える efsフェイシャルクリーム。</h2>
+            <ul class="product__list">
+                    <li class="product__item">
+                      <p class="product__title">efsフェイシャルクリームの利点が、<br>見出しが入ります。</p>
+                      <p class="product__text">これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</p>
+                    </li>
+                    <li class="product__item">
+                      <p class="product__title">efsフェイシャルクリームの利点が、<br>見出しが入ります。</p>
+                      <p class="product__text">これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</p>
+                    </li>
+                    <li class="product__item product__item--left">
+                      <p class="product__title">efsフェイシャルクリームの利点が、<br>見出しが入ります。</p>
+                      <p class="product__text">これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</p>
+                    </li>
+                    <li class="product__item product__item--left">
+                      <p class="product__title">efsフェイシャルクリームの利点が、<br>見出しが入ります。</p>
+                      <p class="product__text">これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</p>
+                    </li>
+                    <li class="product__item product__item--left">
+                      <p class="product__title">efsフェイシャルクリームの利点が、<br>見出しが入ります。</p>
+                      <p class="product__text">これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</p>
+                    </li>
+            </ul><img class="product__image" src="assets/image/product.svg" alt="product"><img class="product__image product__image--bottom" src="assets/image/product.svg" alt="product">
+          </div>
+        </div>
+      </section>
+      <section class="product-cards">
+        <div class="product-cards__wrapper">
+          <div class="card card--with-label mb-35">
+            <div class="card__wrapper">
+              <div class="card__product-wrapper"><img src="assets/image/product.svg" alt="product"></div>
+              <div class="card__text-wrapper">
+                <label class="card__label"><初回限定>特別価格キャンペーン</label>
+                <p class="card__product-name">efsフェイシャルクリーム<span> (00g)</span></p>
+                <div class="flex align-center">
+                  <p class="card__regular-price">通常価格<br>0,000円 ▶</p><span class="card__special-price pink">特別価格</span>
+                  <div class="card__price-wrapper card__price-wrapper--sm"><span class="card__price pink">0,000</span>
+                    <div class="flex flex-column"><span class="card__tax">(税込)</span><span class="card__yen pink">円</span></div>
+                  </div>
+                  <p class="card__shipping card__shipping--sm">送料無料</p>
+                </div>
+                <button class="button mt-10"><span class="button__text">ご購入はこちら　></span><span class="button__text button__text--shadow">ご購入はこちら　></span></button>
+              </div>
             </div>
-            <ul class="ailments__list">
-              <li class="ailments__item">
-                <p class="ailments__text">お悩み内容が入ります。<br>これはコピーです。</p>
-              </li>
-              <li class="ailments__item">
-                <p class="ailments__text">お悩み内容が入ります。<br>これはコピーです。</p>
-              </li>
-              <li class="ailments__item">
-                <p class="ailments__text">お悩み内容が入ります。<br>これはコピーです。</p>
-              </li>
-              <li class="ailments__item">
-                <p class="ailments__text">お悩み内容が入ります。<br>これはコピーです。</p>
-              </li>
-              <li class="ailments__item">
-                <p class="ailments__text">お悩み内容が入ります。<br>これはコピーです。</p>
-              </li>
+          </div>
+          <div class="card">
+            <div class="card__wrapper">
+              <div class="card__product-wrapper"><img src="assets/image/product.svg" alt="product"></div>
+              <div class="card__text-wrapper">
+                <p class="card__product-name">efsフェイシャルクリーム<span> (00g)</span></p>
+                <div class="flex align-start mt-10">
+                  <div class="card__price-wrapper"><span class="card__price">0,000</span>
+                    <div class="flex flex-column"><span class="card__tax">(税込)</span><span class="card__yen">円</span></div>
+                  </div>
+                  <p class="card__shipping">送料無料</p>
+                </div>
+                <button class="button"><span class="button__text button__text--shadow">ご購入はこちら　></span><span class="button__text">ご購入はこちら　></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="wrapper">
+          <div class="reviews__wrapper"> 
+            <h2 class="heading">お客様の声</h2>
+            <ul class="reviews__list"> 
+                    <li class="reviews__item">
+                      <div class="reviews__text-container">
+                        <h3 class="reviews__title">見出しが入ります。</h3>
+                        <p class="reviews__text">これはコピーです。これはコピーです。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</p>
+                      </div>
+                      <div class="reviews__image-container"><img class="reviews__image" src="assets/image/review-1.svg" alt="review"></div>
+                    </li>
+                    <li class="reviews__item reviews__item--reverse">
+                      <div class="reviews__text-container">
+                        <h3 class="reviews__title">見出しが入ります。</h3>
+                        <p class="reviews__text">これはコピーです。これはコピーです。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</p>
+                      </div>
+                      <div class="reviews__image-container"><img class="reviews__image" src="assets/image/review-2.svg" alt="review"></div>
+                    </li>
+                    <li class="reviews__item">
+                      <div class="reviews__text-container">
+                        <h3 class="reviews__title">見出しが入ります。</h3>
+                        <p class="reviews__text">これはコピーです。これはコピーです。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</p>
+                      </div>
+                      <div class="reviews__image-container"><img class="reviews__image" src="assets/image/review-3.svg" alt="review"></div>
+                    </li>
+                    <li class="reviews__item reviews__item--reverse">
+                      <div class="reviews__text-container">
+                        <h3 class="reviews__title">見出しが入ります。</h3>
+                        <p class="reviews__text">これはコピーです。これはコピーです。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</p>
+                      </div>
+                      <div class="reviews__image-container"><img class="reviews__image" src="assets/image/review-4.svg" alt="review"></div>
+                    </li>
+                    <li class="reviews__item">
+                      <div class="reviews__text-container">
+                        <h3 class="reviews__title">見出しが入ります。</h3>
+                        <p class="reviews__text">これはコピーです。これはコピーです。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</p>
+                      </div>
+                      <div class="reviews__image-container"><img class="reviews__image" src="assets/image/review-5.svg" alt="review"></div>
+                    </li>
+                    <li class="reviews__item reviews__item--reverse">
+                      <div class="reviews__text-container">
+                        <h3 class="reviews__title">見出しが入ります。</h3>
+                        <p class="reviews__text">これはコピーです。これはコピーです。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。</p>
+                      </div>
+                      <div class="reviews__image-container"><img class="reviews__image" src="assets/image/review-6.svg" alt="review"></div>
+                    </li>
             </ul>
           </div>
         </div>
@@ -80,6 +256,14 @@
           </div>
         </div>
       </section>
+      <section class="sns">
+        <div class="sns__wrapper">
+          <div class="wrapper">
+            <h2 class="heading">SNSでも大絶賛！</h2>
+            <div class="sns__container"><img class="sns__image" src="assets/image/sns.svg" alt="sns"></div>
+          </div>
+        </div>
+      </section>
       <section class="pr">
         <div class="wrapper">
           <div class="pr__wrapper">
@@ -91,6 +275,44 @@
           </div>
         </div>
       </section>
+      <div class="pb-25">
+        <section class="product-cards">
+          <div class="product-cards__wrapper">
+            <div class="card card--with-label mb-35">
+              <div class="card__wrapper">
+                <div class="card__product-wrapper"><img src="assets/image/product.svg" alt="product"></div>
+                <div class="card__text-wrapper">
+                  <label class="card__label"><初回限定>特別価格キャンペーン</label>
+                  <p class="card__product-name">efsフェイシャルクリーム<span> (00g)</span></p>
+                  <div class="flex align-center">
+                    <p class="card__regular-price">通常価格<br>0,000円 ▶</p><span class="card__special-price pink">特別価格</span>
+                    <div class="card__price-wrapper card__price-wrapper--sm"><span class="card__price pink">0,000</span>
+                      <div class="flex flex-column"><span class="card__tax">(税込)</span><span class="card__yen pink">円</span></div>
+                    </div>
+                    <p class="card__shipping card__shipping--sm">送料無料</p>
+                  </div>
+                  <button class="button mt-10"><span class="button__text">ご購入はこちら　></span><span class="button__text button__text--shadow">ご購入はこちら　></span></button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__wrapper">
+                <div class="card__product-wrapper"><img src="assets/image/product.svg" alt="product"></div>
+                <div class="card__text-wrapper">
+                  <p class="card__product-name">efsフェイシャルクリーム<span> (00g)</span></p>
+                  <div class="flex align-start mt-10">
+                    <div class="card__price-wrapper"><span class="card__price">0,000</span>
+                      <div class="flex flex-column"><span class="card__tax">(税込)</span><span class="card__yen">円</span></div>
+                    </div>
+                    <p class="card__shipping">送料無料</p>
+                  </div>
+                  <button class="button"><span class="button__text button__text--shadow">ご購入はこちら　></span><span class="button__text">ご購入はこちら　></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer"><span class="footer__copyright">efs corporation</span></footer>
   </body>

@@ -1,0 +1,58 @@
+.banner {
+  background: url(/assets/image/banner.svg) no-repeat;
+  background-position: left center;
+  background-size: cover;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 40px 30px 10px;
+
+    @media screen and (max-width: 600px) {
+      padding: 3.3vw 6.6vw 5vw 1.6vw;
+    }
+  }
+
+  &__product-wrapper {
+    width: 126px;
+
+    @media screen and (max-width: 600px) {
+      width: 21vw;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text {
+    font-family: $yugo;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-weight: 500;
+    font-size: 4.6rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 7.6vw;
+    }
+  }
+
+  &__badge-wrapper {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 5px;
+
+    @media screen and (max-width: 600px) {
+      padding-top: 0.8vw;
+    }
+  }
+
+  &__text-wrapper {
+    padding-top: 5px;
+
+    @media screen and (max-width: 600px) {
+      padding-top: 0.8vw;
+    }
+  }
+}

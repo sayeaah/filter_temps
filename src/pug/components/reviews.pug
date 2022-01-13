@@ -1,0 +1,20 @@
+mixin item(img)
+  li.reviews__item&attributes(attributes)= name
+    .reviews__text-container
+      h3.reviews__title 見出しが入ります。
+      p.reviews__text これはコピーです。これはコピーです。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。
+    .reviews__image-container
+      img.reviews__image(src= img alt="review")
+
+
+section.reviews
+  .wrapper
+    .reviews__wrapper 
+      h2.heading お客様の声
+      ul.reviews__list 
+        +item('assets/image/review-1.svg')
+        +item('assets/image/review-2.svg')(class="reviews__item--reverse")
+        +item('assets/image/review-3.svg')
+        +item('assets/image/review-4.svg')(class="reviews__item--reverse")
+        +item('assets/image/review-5.svg')
+        +item('assets/image/review-6.svg')(class="reviews__item--reverse")
