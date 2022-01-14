@@ -403,6 +403,7 @@ th {
 html {
   height: 100%;
   font-size: 10px;
+  font-weight: normal;
 }
 
 ul,
@@ -417,5 +418,3 @@ a {
 .header {
   width: 100%;
 }
-
-/*# sourceMappingURL=style.css.map */
