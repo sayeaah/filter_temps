@@ -1,0 +1,19 @@
+mixin item
+  li.topic__item&attributes(attributes)= name
+    .topic__image-wrapper
+      img(src="" alt="" onerror="this.style.display='none'")
+    .topic__text-wrapper
+      span.topic__text 〇〇〇〇でも
+
+section.topic
+  .topic__wrapper
+    .topic__circles
+      img(src="assets/image/sns-circles.svg" alt="bg circles")
+    .topic__title-wrapper
+      h2.topic__title SNSでも話題！
+      h2.topic__title.topic__title--shadow SNSでも話題！
+    ul.topic__list
+      +item()
+      +item()(class="topic__item--reverse")
+      +item()
+      +item()(class="topic__item--reverse")

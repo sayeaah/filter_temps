@@ -1,0 +1,58 @@
+.problems {
+  &__wrapper {
+    text-align: center;
+    font-family: $sawarabi;
+    background: url(../image/shadow_circle-bg.png) no-repeat;
+    background-position: top 30% center;
+    background-size: 370px;
+    padding-bottom: 15px;
+
+    @media screen and (max-width: 600px) {
+      background-size: 61.6vw;
+      padding-bottom: 2.5vw;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    border-bottom: 1px solid rgba($color: #1a1311, $alpha: 0.3);
+    padding: 5px;
+    font-size: 3.2rem;
+
+    @media screen and (max-width: 600px) {
+      padding: 0.8vw;
+      font-size: 5.3vw;
+    }
+  }
+
+  &__list {
+    padding: 20px 55px;
+
+    @media screen and (max-width: 600px) {
+      padding: 3.3vw 9.1vw;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    font-size: 2.5rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 4.1vw;
+    }
+  }
+
+  &__image {
+    width: auto;
+    height: 65px;
+
+    @media screen and (max-width: 600px) {
+      height: 10.8vw;
+    }
+  }
+}

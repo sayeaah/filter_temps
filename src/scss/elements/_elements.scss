@@ -9,7 +9,12 @@
 html {
   height: 100%;
   font-size: 10px;
+  color: #1a1311;
   font-weight: normal;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.6vw;
+  }
 }
 
 ul,

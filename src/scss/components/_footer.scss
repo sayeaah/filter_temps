@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc413;
+  width: 100%;
+  height: 70px;
+
+  @media screen and (max-width: 600px) {
+    height: 11.6vw;
+  }
+
+  &__copyright {
+    color: $white;
+    font-size: 2.4rem;
+    font-family: serif;
+
+    @media screen and (max-width: 600px) {
+      font-size: 4vw;
+    }
+  }
+}

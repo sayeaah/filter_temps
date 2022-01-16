@@ -5,5 +5,30 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="assets/css/style.css")
-    title FILTER
-  body 
+    title FILTER 2
+
+    // Fonts
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet")
+    link( href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Ole&display=swap" rel="stylesheet")
+  body
+    include components/header.pug
+
+    main
+      include components/banner_and_cards.pug
+      include components/problems.pug
+      include components/benefits.pug
+      include components/reviews.pug
+      include components/shine.pug
+      include components/topic.pug
+      include components/faq.pug
+      include components/request.pug
+      include components/cards.pug
+
+    include components/footer.pug
+
+    script(src="assets/js/circletype.min.js")
+    script(src="assets/js/main.js")  

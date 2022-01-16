@@ -1,0 +1,42 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  -webkit-appearance: none;
+  background: url(../image/button.svg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border: 0;
+  width: 375px;
+  height: 85px;
+
+  @media screen and (max-width: 600px) {
+    width: 62.5vw;
+    height: 14.1vw;
+  }
+
+  &__icon {
+    height: auto;
+    width: 30px;
+    margin-right: 5px;
+
+    @media screen and (max-width: 600px) {
+      width: 5vw;
+      margin-right: 0.8vw;
+    }
+  }
+
+  &__text {
+    font-family: $notoserif;
+    font-weight: 500;
+    color: $white;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 4.6vw;
+      line-height: 4.6vw;
+    }
+  }
+}

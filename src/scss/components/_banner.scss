@@ -1,0 +1,98 @@
+.banner {
+  background: url(../image/sparkles.png) no-repeat, url(../image/banner-bg.png) no-repeat;
+  background-position: top -20px center, bottom center;
+  background-size: contain, 100% 100%;
+  overflow: hidden;
+
+  &__wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__image-wrapper {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 564px;
+
+    @media screen and (max-width: 600px) {
+      height: 94vw;
+    }
+  }
+
+  &__text-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 23% 50px 0;
+
+    @media screen and (max-width: 600px) {
+      padding: 23% 8.3vw 0;
+    }
+  }
+
+  &__heading {
+    font-family: $sawarabi;
+    font-weight: 400;
+    margin: 0;
+    font-size: 3.9rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 6.5vw;
+    }
+
+    span {
+      display: block;
+      font-size: 5rem;
+      line-height: 1.3em;
+
+      @media screen and (max-width: 600px) {
+        font-size: 8.3vw;
+      }
+    }
+  }
+
+  &__text {
+    font-family: $notosans;
+    width: 285px;
+    font-size: 1.1rem;
+
+    @media screen and (max-width: 600px) {
+      width: 47.5vw;
+      font-size: 1.8vw;
+    }
+
+    &--with-ellipsis {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  & + section {
+    margin-top: -150px;
+
+    @media screen and (max-width: 600px) {
+      margin-top: -25vw;
+    }
+  }
+}

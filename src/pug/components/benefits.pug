@@ -1,0 +1,24 @@
+mixin item(point, pointClass)
+  li.benefits__item&attributes(attributes)= name
+    span.benefits__point(class= pointClass)= point
+    .benefits__content
+      .benefits__image-wrapper
+        img(src="" alt="image" onerror="this.style.display='none'")
+      .benefits__text-wrapper
+        p.benefits__item-title これはコピーです○○○○○○○。
+        p.benefits__detail.benefits__detail--with-ellipsis これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。
+
+section.benefits
+  .benefits__wrapper
+    .benefits__title-wrapper
+      h2.benefits__title そんなお悩みに
+        p.benefits__title.benefits__title--lg
+          span 5
+          | つ
+        | のちから
+    ul.benefits__list
+      +item(1, 'benefits__point--1')
+      +item(2)(class="benefits__item--reverse")
+      +item(3)
+      +item(4)(class="benefits__item--reverse")
+      +item(5)

@@ -1,0 +1,74 @@
+.shine {
+  background: url(../image/flower-bg-small.png);
+  width: 100%;
+  padding-bottom: 17px;
+
+  @media screen and (max-width: 600px) {
+    padding-bottom: 2.8vw;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: url(../image/bg-yellow.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom center;
+    width: 100%;
+    height: 120px;
+
+    @media screen and (max-width: 600px) {
+      height: 20vw;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    font-family: $notoserif;
+    color: $dark-brown;
+    font-size: 2.8rem;
+    height: 85px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 4.6vw;
+      height: 14.1vw;
+    }
+  }
+
+  &__wrapper {
+    max-width: 600px;
+    margin: 15px auto 0;
+
+    @media screen and (max-width: 600px) {
+      margin-top: 2.5vw;
+    }
+  }
+
+  &__box {
+    background: $white;
+    margin: 0 auto;
+    width: 475px;
+    height: 280px;
+    padding: 10px;
+
+    @media screen and (max-width: 600px) {
+      width: 79.1vw;
+      height: 46.6vw;
+      padding: 1.6vw;
+    }
+  }
+
+  &__text {
+    font-family: $sawarabi;
+    text-align: center;
+    color: $dark-brown;
+    margin-top: 18px;
+    font-size: 2rem;
+
+    @media screen and (max-width: 600px) {
+      margin-top: 3vw;
+      font-size: 3.3vw;
+    }
+  }
+}
