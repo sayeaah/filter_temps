@@ -1,0 +1,20 @@
+mixin item
+  li.sns__item&attributes(attributes)= name
+    .sns__image-wrapper
+      img(src="assets/image/sns-sample.jpg" alt="sns")
+
+section.sns
+  .wrapper.wrapper--white
+    .sns__wrapper
+      img.sns__overlay(src="assets/image/balloon-overlay.svg" alt="balloon overlay")
+      .sns__heading-wrapper
+        img.sns__heading-image(src="assets/image/sns-header.svg" alt="sns")
+        h2.sns__heading SNSでも「efsオイル」を
+          br
+          span 大絶賛！
+      ul.sns__list
+        +item()
+        +item()(class="sns__item--reverse")
+        +item()
+        +item()
+        +item()(class="sns__item--reverse")

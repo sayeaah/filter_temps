@@ -5,7 +5,7 @@ const curveHeading = () => {
     curvedHeadings.forEach(text => {
       console.log(text)
       const circleType = new CircleType(text);
-      circleType.radius(700);
+      circleType.radius(1500);
     })
   }
 }

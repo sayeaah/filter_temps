@@ -1,30 +1,7 @@
+@charset "UTF-8";
 @font-face {
   font-family: "KozGoPr6N-Regular";
-  src: url("/assets/fonts/KozGoPr6N-Regular.otf");
-}
-@font-face {
-  font-family: "Ryumin-Heavy";
-  src: url("/assets/fonts/A-OTFRyuminProH-KL.otf");
-}
-@font-face {
-  font-family: "Ryumin-Bold";
-  src: url("/assets/fonts/A-OTFRyuminProB-KL.otf");
-}
-@font-face {
-  font-family: "HGS-Gothic-E";
-  src: url("/assets/fonts/HGSGothicE.otf");
-}
-@font-face {
-  font-family: "HGSSoeiKakugothicUB";
-  src: url("/assets/fonts/HGSSoeiKakugothicUB.otf");
-}
-@font-face {
-  font-family: "GothicMB101-Bold";
-  src: url("/assets/fonts/A-OTFGothicMB101ProB.otf");
-}
-@font-face {
-  font-family: "GothicMB101-Medium";
-  src: url("/assets/fonts/A-OTFGothicMB101ProM.otf");
+  src: url("../fonts/KozGoPr6N-Regular.otf");
 }
 /**
  * 1. Set default font family to sans-serif.
@@ -431,8 +408,15 @@ th {
 html {
   height: 100%;
   font-size: 10px;
-  font-family: "KozGoPr6N-Regular", sans-serif;
-  background: url("/assets/image/main-bg.svg");
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  background-image: url(../image/main-bg-2.svg);
+  background-size: contain;
+  color: #231815;
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 1.6vw;
+  }
 }
 
 ul,
@@ -462,39 +446,38 @@ a {
 .header__text {
   margin: 0;
   font-size: 2rem;
-  font-family: "KozGoPr6N-Regular", sans-serif;
-  font-weight: normal;
-}
-@media screen and (max-width: 600px) {
-  .header__text {
-    font-size: 3.3vw;
-  }
+  font-family: "KozGoPr6N-Regular", "Kozuka Gothic Pr6N", sans-serif;
+  font-weight: 400;
 }
 .header__wrapper {
   max-width: 800px;
   margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+  .header__wrapper {
+    margin: 0;
+  }
+}
 
 .ratings__wrapper {
-  padding: 10px 30px 30px;
+  padding: 20px 30px 0;
   background-color: #fff;
 }
 @media screen and (max-width: 600px) {
   .ratings__wrapper {
-    padding: 1.6vw 5vw 5vw;
+    padding: 3vw 5vw 0;
   }
 }
 .ratings__title {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: #727171;
-  font-weight: normal;
+  font-weight: 500;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 @media screen and (max-width: 600px) {
   .ratings__title {
-    margin-bottom: 4.1vw;
-    font-size: 2.5vw;
+    margin-bottom: 2.5vw;
   }
 }
 .ratings__item-container {
@@ -517,7 +500,7 @@ a {
   justify-content: center;
   flex-direction: column;
   width: 186px;
-  background: url(/assets/image/ratings-left.svg) no-repeat, url(/assets/image/ratings-right.svg) no-repeat;
+  background: url(../image/ratings-left.svg) no-repeat, url(../image/ratings-right.svg) no-repeat;
   background-position: left center, right center;
   background-size: contain, contain;
   position: relative;
@@ -542,38 +525,24 @@ a {
   flex-direction: column;
 }
 .ratings__label {
-  font-family: "Ryumin-Heavy", sans-serif;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-weight: 500;
   font-size: 1.8rem;
-}
-@media screen and (max-width: 600px) {
-  .ratings__label {
-    font-size: 3vw;
-  }
 }
 .ratings__rate {
   text-align: center;
-  font-family: "Ryumin-Bold", sans-serif;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-weight: 900;
   font-size: 4.4rem;
-  line-height: 3.5rem;
-}
-@media screen and (max-width: 600px) {
-  .ratings__rate {
-    font-size: 7.3vw;
-    line-height: 5.8vw;
-  }
+  line-height: 3.7rem;
 }
 .ratings__rate--sm {
   font-size: 1.7rem;
 }
-@media screen and (max-width: 600px) {
-  .ratings__rate--sm {
-    font-size: 2.8vw;
-  }
-}
 .ratings__image {
   width: 100px;
   position: absolute;
-  bottom: 100%;
+  bottom: 102%;
 }
 @media screen and (max-width: 600px) {
   .ratings__image {
@@ -581,7 +550,7 @@ a {
   }
 }
 .ratings__content {
-  background: url(/assets/image/ratings-bg.svg) no-repeat;
+  background: url(../image/ratings-bg.svg) no-repeat;
   background-position: center;
   background-size: contain;
   height: 225px;
@@ -598,14 +567,14 @@ a {
   background-color: #fff;
 }
 .faq__title {
-  font-family: "GothicMB101-Bold", sans-serif;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-weight: 400;
   font-size: 2.9rem;
   padding: 15px 0;
   text-align: center;
 }
 @media screen and (max-width: 600px) {
   .faq__title {
-    font-size: 4.8vw;
     padding: 2.5vw 0;
   }
 }
@@ -614,7 +583,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   .faq__item {
-    padding: 2.5vw 1.6vw;
+    padding: 2.5vw 1.8vw;
   }
 }
 .faq__item--yellow {
@@ -628,7 +597,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   .faq__item-wrapper {
-    padding-left: 6vw;
+    padding-left: 5vw;
   }
 }
 .faq__item-wrapper:first-child {
@@ -638,7 +607,7 @@ a {
 @media screen and (max-width: 600px) {
   .faq__item-wrapper:first-child {
     margin-bottom: 2vw;
-    padding: 0 7vw 0 0;
+    padding: 0 5vw 0 0;
   }
 }
 .faq__image {
@@ -654,13 +623,13 @@ a {
   }
 }
 .faq__text {
-  font-family: "HGS-Gothic-E", sans-serif;
-  font-size: 1.3rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
   margin-top: 3px;
 }
 @media screen and (max-width: 600px) {
   .faq__text {
-    font-size: 2.1vw;
     margin-top: 0.5vw;
   }
 }
@@ -697,36 +666,43 @@ a {
   background-color: #ffd82d;
 }
 .faq__label {
-  font-family: "HGSSoeiKakugothicUB", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
   font-size: 1.7rem;
   line-height: 1.7rem;
   position: relative;
   z-index: 1;
 }
+
+.reviews {
+  padding-top: 55px;
+}
 @media screen and (max-width: 600px) {
-  .faq__label {
-    font-size: 2.8vw;
-    line-height: 2.8vw;
+  .reviews {
+    padding-top: 9.1vw;
   }
 }
-
 .reviews__wrapper {
-  background: linear-gradient(#ffffd2, #ffffd2) no-repeat, url(/assets/image/reviews-bg.svg) no-repeat;
-  padding: 30px 0;
+  position: relative;
+  background-color: #ffffd2;
+  box-shadow: 10px 10px 15px 0 inset #fff, -10px -10px 15px 0 inset #fff;
+  padding: 100px 0 30px;
   border-radius: 25px;
   margin: 0 20px;
-  background-size: 75% 75%, cover;
-  background-position: center;
 }
 @media screen and (max-width: 600px) {
   .reviews__wrapper {
-    padding: 5vw 0;
+    padding: 16.6vw 0 5vw;
     border-radius: 4.1vw;
     margin: 0 3.3vw;
   }
 }
 .reviews__image {
+  position: absolute;
   display: block;
+  top: -6%;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0 auto;
   width: 375px;
   height: auto;
@@ -739,19 +715,19 @@ a {
 }
 .reviews__heading {
   text-align: center;
-  font-size: 2.9rem;
+  font-size: 3.2rem;
   margin-bottom: 20px;
-  font-family: "GothicMB101-Bold", sans-serif;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-weight: 400;
 }
 @media screen and (max-width: 600px) {
   .reviews__heading {
-    font-size: 4.8vw;
     margin-bottom: 3.3vw;
   }
 }
 .reviews__list {
   padding: 0 5px;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
 }
 @media screen and (max-width: 600px) {
@@ -773,7 +749,7 @@ a {
 .reviews__item::before {
   content: "";
   position: absolute;
-  background: transparent url(/assets/image/review-right.svg) no-repeat;
+  background: transparent url(../image/review-right.svg) no-repeat;
   background-size: contain;
   right: 0;
   width: 31px;
@@ -800,7 +776,7 @@ a {
 }
 .reviews__item--left::before {
   content: "";
-  background-image: url(/assets/image/review-left.svg);
+  background-image: url(../image/review-left.svg);
   right: initial;
   left: 0;
 }
@@ -812,7 +788,8 @@ a {
   font-size: 2rem;
   text-align: center;
   background-color: #fff;
-  font-family: "GothicMB101-Medium", sans-serif;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 700;
 }
 @media screen and (max-width: 600px) {
   .reviews__text {
@@ -820,7 +797,6 @@ a {
     padding: 1.1vw 2.5vw;
     margin-bottom: 4.1vw;
     box-shadow: 0.5vw 0.6vw 0.5vw rgba(35, 86, 71, 0.75);
-    font-size: 3.3vw;
   }
 }
 
@@ -836,14 +812,18 @@ a {
   }
 }
 .footer__copyright {
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
 }
+
+.video {
+  padding: 21px 15px 15px;
+}
 @media screen and (max-width: 600px) {
-  .footer__copyright {
-    font-size: 2.3vw;
+  .video {
+    padding: 3.5vw 2.5vw 2.5vw;
   }
 }
-
 .video__wrapper {
   padding: 20px;
 }
@@ -854,7 +834,7 @@ a {
 }
 .video__border {
   padding: 20px;
-  background: url(/assets/image/video-bg.svg) no-repeat;
+  background: url(../image/video-bg.svg) no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 600px) {
@@ -866,7 +846,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(/assets/image/video-ribbon.svg) no-repeat;
+  background: url(../image/video-ribbon.svg) no-repeat;
   background-size: contain;
   background-position: center;
   height: 85px;
@@ -877,20 +857,20 @@ a {
   }
 }
 .video__heading {
-  font-family: "GothicMB101-Bold", sans-serif;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-weight: 400;
   color: #fff;
   font-size: 2.8rem;
   margin-top: 10px;
 }
 @media screen and (max-width: 600px) {
   .video__heading {
-    font-size: 4.5vw;
     margin-top: 2.2vw;
   }
 }
 
 .pr__wrapper {
-  background: url(/assets/image/pr-bg.svg);
+  background: url(../image/pr-bg.svg);
   padding: 25px 20px 35px;
 }
 @media screen and (max-width: 600px) {
@@ -899,14 +879,14 @@ a {
   }
 }
 .pr__heading {
-  margin-bottom: 25px;
-  font-family: "GothicMB101-Bold", sans-serif;
+  font-weight: 400;
+  font-family: "Mochiy Pop P One", sans-serif;
   font-size: 2.9rem;
   text-align: center;
+  margin-bottom: 25px;
 }
 @media screen and (max-width: 600px) {
   .pr__heading {
-    font-size: 4.8vw;
     margin-bottom: 4.1vw;
   }
 }
@@ -920,7 +900,7 @@ a {
   min-width: 188px;
   width: 188px;
   height: 270px;
-  box-shadow: 3px 3px 3px rgba(0, 2, 1, 0.75);
+  box-shadow: 3px 3px 6px rgba(0, 2, 1, 0.75);
   margin-right: 18px;
 }
 @media screen and (max-width: 600px) {
@@ -928,7 +908,6 @@ a {
     min-width: 31.3vw;
     width: 31.3vw;
     height: 45vw;
-    box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 2, 1, 0.75);
     margin-right: 3vw;
   }
 }
@@ -938,6 +917,7 @@ a {
   object-fit: cover;
 }
 .pr__text {
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
   text-align: justify;
   overflow: hidden;
@@ -945,22 +925,824 @@ a {
   -webkit-line-clamp: 13;
   -webkit-box-orient: vertical;
 }
+
+.ailments {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.ailments__wrapper {
+  position: relative;
+  z-index: 1;
+}
+.ailments__image-wrapper {
+  position: absolute;
+  z-index: 2;
+  width: 150px;
+  height: auto;
+  right: 30px;
+  bottom: 20%;
+}
 @media screen and (max-width: 600px) {
-  .pr__text {
-    font-size: 2.3vw;
+  .ailments__image-wrapper {
+    width: 25vw;
+    right: 5vw;
+  }
+}
+.ailments__img {
+  width: 100%;
+  height: auto;
+}
+.ailments__heading-wrapper {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 94%;
+  transform: translateX(-50%);
+  background: url(../image/ailments-header.svg) no-repeat;
+  background-size: contain;
+  width: 470px;
+  height: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .ailments__heading-wrapper {
+    width: 78.3vw;
+    height: 25vw;
+  }
+}
+.ailments__heading {
+  font-family: "Mochiy Pop P One", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 117px;
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 2px 2px 0 #ea5514;
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 600px) {
+  .ailments__heading {
+    height: 19.5vw;
+  }
+}
+.ailments__list {
+  margin-top: -8%;
+}
+.ailments__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 165px;
+}
+@media screen and (max-width: 600px) {
+  .ailments__item {
+    height: 27.5vw;
+  }
+}
+.ailments__item .ailments__text {
+  padding-left: 240px;
+}
+@media screen and (max-width: 600px) {
+  .ailments__item .ailments__text {
+    padding-left: 40vw;
+  }
+}
+.ailments__item--reverse {
+  height: 230px;
+  border: 2px solid #fff;
+}
+@media screen and (max-width: 600px) {
+  .ailments__item--reverse {
+    height: 38.3vw;
+  }
+}
+.ailments__item--reverse .ailments__text {
+  padding-left: 115px;
+}
+@media screen and (max-width: 600px) {
+  .ailments__item--reverse .ailments__text {
+    padding-left: 19.1vw;
+  }
+}
+.ailments__item:nth-child(odd) {
+  z-index: 1;
+}
+.ailments__item:first-child {
+  margin-bottom: -5px;
+}
+@media screen and (max-width: 600px) {
+  .ailments__item:first-child {
+    margin-bottom: -0.8vw;
+  }
+}
+.ailments__item:first-child .ailments__text {
+  padding-left: 140px;
+}
+@media screen and (max-width: 600px) {
+  .ailments__item:first-child .ailments__text {
+    padding-left: 23.3vw;
+  }
+}
+.ailments__item:nth-child(2) {
+  margin-top: -1.5%;
+}
+.ailments__item:nth-child(3) .ailments__text {
+  margin-top: -4%;
+}
+.ailments__item:nth-child(3) .ailments__image-wrapper {
+  width: 147px;
+  right: initial;
+  left: 30px;
+  bottom: -15px;
+}
+@media screen and (max-width: 600px) {
+  .ailments__item:nth-child(3) .ailments__image-wrapper {
+    width: 24.5vw;
+    left: 5vw;
+    bottom: -2.5vw;
+  }
+}
+.ailments__item:nth-child(4) {
+  margin-top: -33px;
+}
+@media screen and (max-width: 600px) {
+  .ailments__item:nth-child(4) {
+    margin-top: -5.5vw;
+  }
+}
+.ailments__item:nth-child(4) .ailments__image-wrapper {
+  width: 155px;
+  bottom: 8%;
+}
+@media screen and (max-width: 600px) {
+  .ailments__item:nth-child(4) .ailments__image-wrapper {
+    width: 25.8vw;
+  }
+}
+.ailments__item:last-child .ailments__image-wrapper {
+  width: 130px;
+  right: initial;
+  left: 30px;
+  bottom: -15px;
+}
+@media screen and (max-width: 600px) {
+  .ailments__item:last-child .ailments__image-wrapper {
+    width: 21.6vw;
+    left: 5vw;
+    bottom: -2.5vw;
+  }
+}
+.ailments__bg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.ailments__text {
+  position: relative;
+  z-index: 1;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  font-size: 2.3rem;
+  transform: rotate(-5deg);
+  margin-top: 3%;
+}
+
+.product {
+  margin-top: -15px;
+}
+@media screen and (max-width: 600px) {
+  .product {
+    margin-top: -2.5vw;
+  }
+}
+.product__header-wrapper {
+  position: relative;
+  background-color: #fff;
+  height: 250px;
+}
+@media screen and (max-width: 600px) {
+  .product__header-wrapper {
+    height: 41.6vw;
+  }
+}
+.product__header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../image/product-header.svg) no-repeat;
+  background-size: 100% 100%;
+  bottom: 6%;
+  left: -1%;
+  width: 102%;
+  height: 140px;
+}
+@media screen and (max-width: 600px) {
+  .product__header {
+    height: 23.3vw;
+  }
+}
+.product__heading {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 2.9rem;
+  line-height: 3.6rem;
+  color: #6A3906;
+  margin-top: -3%;
+}
+.product__title {
+  color: #fff;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 3px 3px 3px rgba(71, 70, 30, 0.75);
+  padding: 5px 0;
+}
+.product__details {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 50px;
+}
+@media screen and (max-width: 600px) {
+  .product__details {
+    padding: 2.5vw 3.3vw;
+  }
+}
+.product__details--reverse {
+  flex-direction: row-reverse;
+}
+.product__details--reverse .product__image-wrapper {
+  margin: 0 0 0 5vw;
+}
+.product__image-wrapper {
+  border: 1px solid rgba(35, 24, 21, 0.5);
+  min-width: 230px;
+  width: 230px;
+  height: 250px;
+  margin-right: 30px;
+}
+@media screen and (max-width: 600px) {
+  .product__image-wrapper {
+    min-width: 38.3vw;
+    width: 38.3vw;
+    height: 41.6vw;
+    margin-right: 5vw;
+  }
+}
+.product__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product__text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.4rem;
+}
+.product__text--with-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 11;
+  -webkit-box-orient: vertical;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 6px solid #ff9e00;
+  padding: 8px 20px 3px;
+  z-index: 1;
+}
+@media screen and (max-width: 600px) {
+  .card {
+    padding: 1.3vw 3.3vw 0.5vw;
+  }
+}
+.card:not(:first-child) {
+  margin-top: 25px;
+}
+@media screen and (max-width: 600px) {
+  .card:not(:first-child) {
+    margin-top: 4.1vw;
+  }
+}
+.card-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 36px 30px 30px;
+}
+@media screen and (max-width: 600px) {
+  .card-wrapper {
+    padding: 6vw 5vw 5vw;
+  }
+}
+.card-wrapper--big-padding-bottom {
+  padding-bottom: 200px;
+}
+@media screen and (max-width: 600px) {
+  .card-wrapper--big-padding-bottom {
+    padding-bottom: 33.3vw;
+  }
+}
+.card__flower {
+  position: absolute;
+  width: 94px;
+  height: auto;
+  bottom: -4%;
+  left: -6%;
+  z-index: -1;
+}
+@media screen and (max-width: 600px) {
+  .card__flower {
+    width: 15.6vw;
+  }
+}
+.card__flower--right {
+  left: initial;
+  right: -6%;
+}
+.card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .card__head {
+    padding: 0 1.5vw;
+  }
+}
+.card__body {
+  display: flex;
+  align-items: center;
+}
+.card__image-wrapper {
+  width: 110px;
+  margin-right: 2px;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .card__image-wrapper {
+    width: 18.3vw;
+    margin-right: 0.3vw;
+  }
+}
+.card__image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.card__text-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.card__title {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 900;
+  font-size: 4.5rem;
+  line-height: 1.3em;
+}
+.card__detail {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.card__price-wrapper {
+  display: flex;
+  align-items: center;
+}
+.card__price-wrapper div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card__price {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 5.5rem;
+  line-height: 1.2em;
+  font-weight: 800;
+  color: #e60012;
+}
+.card__tax {
+  font-family: "KozGoPr6N-Regular", "Kozuka Gothic Pr6N", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2em;
+}
+.card__yen {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1em;
+  font-weight: 800;
+  color: #e60012;
+}
+.card__shipping-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e60012;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  border-radius: 12px;
+  width: 90px;
+  height: 90px;
+  margin-left: 8px;
+}
+@media screen and (max-width: 600px) {
+  .card__shipping-wrapper {
+    width: 15vw;
+    height: 15vw;
+    margin-left: 1.3vw;
+  }
+}
+.card__shipping-wrapper span {
+  font-size: 1.4rem;
+  line-height: 1.2em;
+}
+.card__shipping {
+  font-size: 2.8rem;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+.card__regular-price {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 600px) {
+  .card__regular-price {
+    margin-bottom: 0.8vw;
+  }
+}
+.card__discount-label {
+  background: url(../image/label-bg.svg) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  width: 165px;
+  height: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .card__discount-label {
+    width: 27.5vw;
+    height: 6.6vw;
+  }
+}
+.card__discount-label label {
+  white-space: nowrap;
+  color: #fff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 2.9rem;
+  line-height: 3.5rem;
+}
+.card__label-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, 50%);
+}
+.card__label {
+  background-color: #ff9e00;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  color: #fff;
+  text-shadow: 2px 2px 0 #EA5514;
+  padding: 2px 20px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 600px) {
+  .card__label {
+    padding: 0.3vw 3.3vw;
+  }
+}
+.card--with-discount {
+  padding-top: 28px;
+}
+@media screen and (max-width: 600px) {
+  .card--with-discount {
+    padding-top: 4.6vw;
+  }
+}
+.card--with-discount .card__shipping {
+  font-size: 3.5rem;
+}
+.card--with-discount .card__detail {
+  margin-left: 15px;
+}
+@media screen and (max-width: 600px) {
+  .card--with-discount .card__detail {
+    margin-left: 2.5vw;
   }
 }
 
+.button {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent url(../image/button.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  height: 80px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .button {
+    width: 56.6vw;
+    height: 13.3vw;
+  }
+}
+.button__icon {
+  margin-right: -8px;
+  width: 55px;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .button__icon {
+    margin-right: -1.3vw;
+    width: 9.1vw;
+  }
+}
+.button__text {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 800;
+  font-size: 3.3rem;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 136, 66, 0.75);
+  margin-top: -2px;
+}
+@media screen and (max-width: 600px) {
+  .button__text {
+    margin-top: -0.3vw;
+  }
+}
+
+.sns__wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 50px 0 70px;
+}
+@media screen and (max-width: 600px) {
+  .sns__wrapper {
+    padding: 8.3vw 0 11.6vw;
+  }
+}
+.sns__heading-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 0 1px;
+}
+.sns__heading {
+  text-align: center;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 2.9rem;
+  font-weight: 400;
+  line-height: 1em;
+}
+.sns__heading span {
+  font-size: 3.9rem;
+}
+.sns__heading-image {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: -2%;
+  z-index: -1;
+  width: 99%;
+  height: auto;
+}
+.sns__list {
+  position: relative;
+  z-index: 1;
+}
+.sns__item {
+  padding: 0 45px;
+}
+@media screen and (max-width: 600px) {
+  .sns__item {
+    padding: 0 7.5vw;
+  }
+}
+.sns__item:nth-child(even) .sns__image-wrapper {
+  margin-left: auto;
+}
+.sns__item:first-child {
+  padding: 0 30px;
+  margin-top: 10%;
+}
+@media screen and (max-width: 600px) {
+  .sns__item:first-child {
+    padding: 0 5vw;
+  }
+}
+.sns__item:nth-child(2) {
+  margin-top: -6%;
+}
+.sns__item:nth-child(3) {
+  margin-top: -4%;
+}
+.sns__item:nth-child(4) {
+  margin-top: -2%;
+}
+.sns__item:last-child {
+  margin-top: -3.5%;
+}
+.sns__item:last-child .sns__image-wrapper {
+  transform: rotate(-2deg);
+}
+.sns__item--reverse .sns__image-wrapper {
+  transform: rotate(-4deg);
+}
+.sns__image-wrapper {
+  margin: 0;
+  width: 360px;
+  height: auto;
+  transform: rotate(4deg);
+}
+@media screen and (max-width: 600px) {
+  .sns__image-wrapper {
+    width: 60vw;
+  }
+}
+.sns__image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.sns__overlay {
+  position: absolute;
+  z-index: -1;
+  left: -1%;
+  bottom: 2%;
+  width: auto;
+  height: 837px;
+}
+@media screen and (max-width: 600px) {
+  .sns__overlay {
+    height: 139.5vw;
+  }
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../image/banner-lg.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .banner {
+    height: 59.1vw;
+    background-image: url(../image/banner.svg);
+    background-position: center;
+  }
+}
+.banner__wrapper {
+  position: relative;
+  max-width: 700px;
+  width: 700px;
+  margin: 0 auto;
+  height: 84%;
+  border: 8px solid rgba(255, 158, 0, 0.38);
+}
+@media screen and (max-width: 1024px) {
+  .banner__wrapper {
+    width: 91.6vw;
+  }
+}
+.banner__image-wrapper {
+  text-align: center;
+  margin-top: -1%;
+}
+.banner__image {
+  width: auto;
+  height: 240px;
+}
+@media screen and (max-width: 600px) {
+  .banner__image {
+    height: 40vw;
+  }
+}
+.banner__heading-wrapper {
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 600;
+  transform: rotate(354.56deg);
+  text-align: right;
+  z-index: 1;
+}
+.banner__text {
+  font-size: 4rem;
+  line-height: 4.4rem;
+}
+.banner__text--bottom {
+  font-size: 4.1rem;
+  margin-right: -35px;
+}
+.banner__line {
+  position: absolute;
+  left: 0;
+  top: 17px;
+  transform: rotate(5deg);
+  z-index: -1;
+  width: auto;
+  height: 49px;
+}
+@media screen and (max-width: 600px) {
+  .banner__line {
+    top: 2.8vw;
+    height: 8.1vw;
+  }
+}
+.banner__line--2 {
+  height: 40px;
+  top: 60px;
+  left: initial;
+  right: 0;
+}
+@media screen and (max-width: 600px) {
+  .banner__line--2 {
+    top: 10vw;
+    height: 6vw;
+  }
+}
+.banner__content {
+  width: 100%;
+  padding: 0 7px;
+}
+@media screen and (min-width: 700px) {
+  .banner__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
+}
+
+.logo {
+  position: absolute;
+  max-width: 550px;
+  width: 550px;
+  margin: 0 auto;
+  right: -8px;
+  top: -8px;
+  text-align: right;
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    right: -1.3vw;
+    top: -1.3vw;
+  }
+}
+.logo__text {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
 .wrapper {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .wrapper--white {
   background-color: #fff;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .wrapper {
     margin: 0 6.7vw;
+  }
+}
+@media screen and (min-width: 1024) {
+  .wrapper {
+    max-width: 700px;
   }
 }
 

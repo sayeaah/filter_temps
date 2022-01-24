@@ -9,8 +9,14 @@
 html {
   height: 100%;
   font-size: 10px;
-  font-family: $kg-regular;
-  background: url('/assets/image/main-bg.svg');
+  font-family: $yugo;
+  background-image: url(../image/main-bg-2.svg);
+  background-size: contain;
+  color: #231815;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.6vw;
+  }
 }
 
 ul,

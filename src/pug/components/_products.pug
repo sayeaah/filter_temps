@@ -1,0 +1,21 @@
+mixin item(title)
+  li.product__item
+    p.product__title #{title}. 見出しが入ります。見出しが入ります。
+    .product__details&attributes(attributes)= name
+      .product__image-wrapper
+        img(src="" alt="image" onerror="this.style.display='none'")
+      p.product__text.product__text--with-ellipsis これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。
+
+section.product
+  .wrapper
+    .product__header-wrapper
+      .product__header
+        h2.product__heading こんなに違います。
+          br
+          | 願いを叶えるefsオイル。
+    ul.product__list
+      +item(1)
+      +item(2)(class="product__details--reverse")
+      +item(3)
+      +item(4)(class="product__details--reverse")
+      +item(5)

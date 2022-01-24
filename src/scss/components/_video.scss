@@ -1,4 +1,10 @@
 .video {
+  padding: 21px 15px 15px;
+
+  @media screen and (max-width: 600px) {
+    padding: 3.5vw 2.5vw 2.5vw;
+  }
+
   &__wrapper {
     padding: 20px;
 
@@ -9,7 +15,7 @@
 
   &__border {
     padding: 20px;
-    background: url(/assets/image/video-bg.svg) no-repeat;
+    background: url(../image/video-bg.svg) no-repeat;
     background-size: cover;
 
     @media screen and (max-width: 600px) {
@@ -21,7 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(/assets/image/video-ribbon.svg) no-repeat;
+    background: url(../image/video-ribbon.svg) no-repeat;
     background-size: contain;
     background-position: center;
     height: 85px;
@@ -32,13 +38,13 @@
   }
 
   &__heading {
-    font-family: $gothic-mb-101;
+    font-family: $mochi;
+    font-weight: 400;
     color: $white;
     font-size: 2.8rem;
     margin-top: 10px;
 
     @media screen and (max-width: 600px) {
-      font-size: 4.5vw;
       margin-top: 2.2vw;
     }
   }

@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>FILTER</title>
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header"> 
@@ -14,36 +21,250 @@
       </div>
     </header>
     <main>
-      <div class="ratings">
+      <section class="banner">
+        <div class="banner__wrapper">
+          <div class="logo"> <span class="logo__text">LOGO</span></div>
+          <div class="banner__content">
+            <div class="banner__heading-wrapper"><img class="banner__line" src="assets/image/line-1.svg" alt="line1"><img class="banner__line banner__line--2" src="assets/image/line-2.png" alt="line2">
+              <h2 class="banner__heading">
+                <p class="banner__text">からだにいいこと</p>
+                <p class="banner__text banner__text--bottom">はじめよう。</p>
+              </h2>
+            </div>
+            <div class="banner__image-wrapper"><img class="banner__image" src="assets/image/board.png" alt="board"></div>
+          </div>
+        </div>
+      </section>
+      <section class="ratings">
         <div class="wrapper wrapper--white">
           <div class="ratings__wrapper">
             <h2 class="ratings__title">おいしいけど○○が気になる。<br>そんな方のために○○○○と○○○○○を考えて作りました。</h2>
             <div class="ratings__content">
               <div class="ratings__item-container ratings__item-container--full">
                 <div class="ratings__item"><img class="ratings__image" src="assets/image/ratings-crown.svg" alt="crown">
-                  <p class="ratings__text"><span class="ratings__label">おすすめ度</span>
+                  <div class="ratings__text"><span class="ratings__label">おすすめ度</span>
                     <p class="ratings__rate">100<span class="ratings__rate ratings__rate--sm">%</span></p>
-                  </p>
+                  </div>
                 </div>
               </div>
               <div class="ratings__item-container">
                 <div class="ratings__item"><img class="ratings__image" src="assets/image/ratings-crown.svg" alt="crown">
-                  <p class="ratings__text"><span class="ratings__label">続けやすさ</span>
+                  <div class="ratings__text"><span class="ratings__label">続けやすさ</span>
                     <p class="ratings__rate">97.5<span class="ratings__rate ratings__rate--sm">%</span></p>
-                  </p>
+                  </div>
                 </div>
                 <div class="ratings__item"><img class="ratings__image" src="assets/image/ratings-crown.svg" alt="crown">
-                  <p class="ratings__text"><span class="ratings__label">お客様満足度</span>
+                  <div class="ratings__text"><span class="ratings__label">お客様満足度</span>
                     <p class="ratings__rate">98.2<span class="ratings__rate ratings__rate--sm">%</span></p>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="reviews">
-        <div class="wrapper wrapper--white"> 
+      </section>
+      <section>
+        <div class="wrapper wrapper--white">
+          <div class="card-wrapper card-wrapper--big-padding-bottom">
+            <div class="card card--with-discount"><img class="card__flower" src="assets/image/flower-left.svg" alt="flower"><img class="card__flower card__flower--right" src="assets/image/flower-right.svg" alt="flower">
+              <div class="card__label-wrapper">
+                <label class="card__label">〈初回限定〉お試しキャンペーン</label>
+              </div>
+              <div class="card__content">
+                <div class="card__head">
+                  <p class="card__title">efsオイル</p>
+                  <p class="card__detail">内容量<br>○○○○○○</p>
+                </div>
+                <div class="card__body">
+                  <div class="card__image-wrapper"><img src="assets/image/board.png" alt="board"></div>
+                  <div class="card__content-container">
+                    <p class="card__regular-price">通常価格 0,000円</p>
+                    <div class="card__text-wrapper">
+                      <div>
+                        <div class="card__discount-label">
+                          <label>特別価格</label>
+                        </div>
+                        <div class="card__price-wrapper"><span class="card__price">0,000</span>
+                          <div><span class="card__tax">(税込)</span><span class="card__yen">円</span></div>
+                        </div>
+                      </div>
+                      <div class="card__shipping-wrapper">
+                        <p class="card__shipping">送料<br>無料</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <button class="button"> <img class="button__icon" src="assets/image/cart.svg" alt="cart"><span class="button__text">カートに入れる</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="card"><img class="card__flower" src="assets/image/flower-left.svg" alt="flower"><img class="card__flower card__flower--right" src="assets/image/flower-right.svg" alt="flower">
+              <div class="card__content">
+                <div class="card__body">
+                  <div class="card__image-wrapper"><img src="assets/image/board.png" alt="board"></div>
+                  <div class="card__content-container">
+                    <p class="card__title">efsオイル</p>
+                    <div class="card__text-wrapper">
+                      <div>
+                        <p class="card__detail">内容量 ○○○○○○</p>
+                        <div class="card__price-wrapper"><span class="card__price">0,000</span>
+                          <div><span class="card__tax">(税込)</span><span class="card__yen">円</span></div>
+                        </div>
+                      </div>
+                      <div class="card__shipping-wrapper"><span>しかも</span>
+                        <p class="card__shipping">送料<br>無料</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <button class="button"> <img class="button__icon" src="assets/image/cart.svg" alt="cart"><span class="button__text">カートに入れる</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ailments">
+        <div class="ailments__wrapper">
+          <div class="ailments__heading-wrapper">
+            <h2 class="ailments__heading">こんな「お悩み」<br>抱えていませんか？</h2>
+          </div>
+          <ul class="ailments__list">
+            <li class="ailments__item"><img class="ailments__bg" src="assets/image/gradient-bg.svg" alt="background">
+              <p class="ailments__text">お悩み内容○○○○<br>○○○○○○○○○○○</p>
+            </li>
+                  <li class="ailments__item ailments__item--reverse"><img class="ailments__bg" src="assets/image/pattern-bg.svg" alt="background">
+                    <p class="ailments__text">お悩み内容<br>○○○○○○○○</p>
+                    <div class="ailments__image-wrapper"><img class="ailments__img" src="assets/image/avatar-1.svg" alt="avatar"></div>
+                  </li>
+                  <li class="ailments__item"><img class="ailments__bg" src="assets/image/gradient-sm.svg" alt="background">
+                    <p class="ailments__text">お悩み内容<br>○○○○○○○○</p>
+                    <div class="ailments__image-wrapper"><img class="ailments__img" src="assets/image/avatar-2.svg" alt="avatar"></div>
+                  </li>
+                  <li class="ailments__item ailments__item--reverse"><img class="ailments__bg" src="assets/image/pattern-bg.svg" alt="background">
+                    <p class="ailments__text">お悩み内容<br>○○○○○○○○</p>
+                    <div class="ailments__image-wrapper"><img class="ailments__img" src="assets/image/avatar-3.svg" alt="avatar"></div>
+                  </li>
+                  <li class="ailments__item"><img class="ailments__bg" src="assets/image/gradient-bg.svg" alt="background">
+                    <p class="ailments__text">お悩み内容<br>○○○○○○○○</p>
+                    <div class="ailments__image-wrapper"><img class="ailments__img" src="assets/image/avatar-4.svg" alt="avatar"></div>
+                  </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product">
+        <div class="wrapper">
+          <div class="product__header-wrapper">
+            <div class="product__header">
+              <h2 class="product__heading">こんなに違います。<br>願いを叶えるefsオイル。</h2>
+            </div>
+          </div>
+          <ul class="product__list">
+                  <li class="product__item">
+                    <p class="product__title">1. 見出しが入ります。見出しが入ります。</p>
+                    <div class="product__details">
+                      <div class="product__image-wrapper"><img src="" alt="image" onerror="this.style.display='none'"></div>
+                      <p class="product__text product__text--with-ellipsis">これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。</p>
+                    </div>
+                  </li>
+                  <li class="product__item">
+                    <p class="product__title">2. 見出しが入ります。見出しが入ります。</p>
+                    <div class="product__details product__details--reverse">
+                      <div class="product__image-wrapper"><img src="" alt="image" onerror="this.style.display='none'"></div>
+                      <p class="product__text product__text--with-ellipsis">これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。</p>
+                    </div>
+                  </li>
+                  <li class="product__item">
+                    <p class="product__title">3. 見出しが入ります。見出しが入ります。</p>
+                    <div class="product__details">
+                      <div class="product__image-wrapper"><img src="" alt="image" onerror="this.style.display='none'"></div>
+                      <p class="product__text product__text--with-ellipsis">これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。</p>
+                    </div>
+                  </li>
+                  <li class="product__item">
+                    <p class="product__title">4. 見出しが入ります。見出しが入ります。</p>
+                    <div class="product__details product__details--reverse">
+                      <div class="product__image-wrapper"><img src="" alt="image" onerror="this.style.display='none'"></div>
+                      <p class="product__text product__text--with-ellipsis">これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。</p>
+                    </div>
+                  </li>
+                  <li class="product__item">
+                    <p class="product__title">5. 見出しが入ります。見出しが入ります。</p>
+                    <div class="product__details">
+                      <div class="product__image-wrapper"><img src="" alt="image" onerror="this.style.display='none'"></div>
+                      <p class="product__text product__text--with-ellipsis">これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです。これはコピーです○○○○○○○。○○○○○○○。これはコピーです○○○○○○○。これはコピーです。</p>
+                    </div>
+                  </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="wrapper wrapper--white">
+          <div class="card-wrapper">
+            <div class="card card--with-discount"><img class="card__flower" src="assets/image/flower-left.svg" alt="flower"><img class="card__flower card__flower--right" src="assets/image/flower-right.svg" alt="flower">
+              <div class="card__label-wrapper">
+                <label class="card__label">〈初回限定〉お試しキャンペーン</label>
+              </div>
+              <div class="card__content">
+                <div class="card__head">
+                  <p class="card__title">efsオイル</p>
+                  <p class="card__detail">内容量<br>○○○○○○</p>
+                </div>
+                <div class="card__body">
+                  <div class="card__image-wrapper"><img src="assets/image/board.png" alt="board"></div>
+                  <div class="card__content-container">
+                    <p class="card__regular-price">通常価格 0,000円</p>
+                    <div class="card__text-wrapper">
+                      <div>
+                        <div class="card__discount-label">
+                          <label>特別価格</label>
+                        </div>
+                        <div class="card__price-wrapper"><span class="card__price">0,000</span>
+                          <div><span class="card__tax">(税込)</span><span class="card__yen">円</span></div>
+                        </div>
+                      </div>
+                      <div class="card__shipping-wrapper">
+                        <p class="card__shipping">送料<br>無料</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <button class="button"> <img class="button__icon" src="assets/image/cart.svg" alt="cart"><span class="button__text">カートに入れる</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="card"><img class="card__flower" src="assets/image/flower-left.svg" alt="flower"><img class="card__flower card__flower--right" src="assets/image/flower-right.svg" alt="flower">
+              <div class="card__content">
+                <div class="card__body">
+                  <div class="card__image-wrapper"><img src="assets/image/board.png" alt="board"></div>
+                  <div class="card__content-container">
+                    <p class="card__title">efsオイル</p>
+                    <div class="card__text-wrapper">
+                      <div>
+                        <p class="card__detail">内容量 ○○○○○○</p>
+                        <div class="card__price-wrapper"><span class="card__price">0,000</span>
+                          <div><span class="card__tax">(税込)</span><span class="card__yen">円</span></div>
+                        </div>
+                      </div>
+                      <div class="card__shipping-wrapper"><span>しかも</span>
+                        <p class="card__shipping">送料<br>無料</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <button class="button"> <img class="button__icon" src="assets/image/cart.svg" alt="cart"><span class="button__text">カートに入れる</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wrapper wrapper--white">
+        <div class="reviews">
           <div class="reviews__wrapper"><img class="reviews__image" src="assets/image/reviews-characters.svg" alt="characters">
             <h2 class="reviews__heading">お客様の声</h2>
             <ul class="reviews__list">
@@ -65,9 +286,9 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="video">
-        <div class="wrapper wrapper--white">
+      </section>
+      <section class="wrapper wrapper--white">
+        <div class="video">
           <div class="video__heading-wrapper">
             <h2 class="video__heading js-curved-heading">動画でご紹介タイトル</h2>
           </div>
@@ -77,8 +298,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="faq">
+      </section>
+      <section class="faq">
         <div class="wrapper">
           <div class="faq__wrapper">
             <h2 class="faq__title">よくあるご質問</h2>
@@ -176,8 +397,34 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="pr">
+      </section>
+      <section class="sns">
+        <div class="wrapper wrapper--white">
+          <div class="sns__wrapper"><img class="sns__overlay" src="assets/image/balloon-overlay.svg" alt="balloon overlay">
+            <div class="sns__heading-wrapper"><img class="sns__heading-image" src="assets/image/sns-header.svg" alt="sns">
+              <h2 class="sns__heading">SNSでも「efsオイル」を<br><span>大絶賛！</span></h2>
+            </div>
+            <ul class="sns__list">
+                    <li class="sns__item">
+                      <div class="sns__image-wrapper"><img src="assets/image/sns-sample.jpg" alt="sns"></div>
+                    </li>
+                    <li class="sns__item sns__item--reverse">
+                      <div class="sns__image-wrapper"><img src="assets/image/sns-sample.jpg" alt="sns"></div>
+                    </li>
+                    <li class="sns__item">
+                      <div class="sns__image-wrapper"><img src="assets/image/sns-sample.jpg" alt="sns"></div>
+                    </li>
+                    <li class="sns__item">
+                      <div class="sns__image-wrapper"><img src="assets/image/sns-sample.jpg" alt="sns"></div>
+                    </li>
+                    <li class="sns__item sns__item--reverse">
+                      <div class="sns__image-wrapper"><img src="assets/image/sns-sample.jpg" alt="sns"></div>
+                    </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="pr">
         <div class="wrapper">
           <div class="pr__wrapper">
             <h2 class="pr__heading">会社PR欄</h2>
@@ -187,12 +434,73 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section>
+        <div class="wrapper wrapper--white">
+          <div class="card-wrapper">
+            <div class="card card--with-discount"><img class="card__flower" src="assets/image/flower-left.svg" alt="flower"><img class="card__flower card__flower--right" src="assets/image/flower-right.svg" alt="flower">
+              <div class="card__label-wrapper">
+                <label class="card__label">〈初回限定〉お試しキャンペーン</label>
+              </div>
+              <div class="card__content">
+                <div class="card__head">
+                  <p class="card__title">efsオイル</p>
+                  <p class="card__detail">内容量<br>○○○○○○</p>
+                </div>
+                <div class="card__body">
+                  <div class="card__image-wrapper"><img src="assets/image/board.png" alt="board"></div>
+                  <div class="card__content-container">
+                    <p class="card__regular-price">通常価格 0,000円</p>
+                    <div class="card__text-wrapper">
+                      <div>
+                        <div class="card__discount-label">
+                          <label>特別価格</label>
+                        </div>
+                        <div class="card__price-wrapper"><span class="card__price">0,000</span>
+                          <div><span class="card__tax">(税込)</span><span class="card__yen">円</span></div>
+                        </div>
+                      </div>
+                      <div class="card__shipping-wrapper">
+                        <p class="card__shipping">送料<br>無料</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <button class="button"> <img class="button__icon" src="assets/image/cart.svg" alt="cart"><span class="button__text">カートに入れる</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="card"><img class="card__flower" src="assets/image/flower-left.svg" alt="flower"><img class="card__flower card__flower--right" src="assets/image/flower-right.svg" alt="flower">
+              <div class="card__content">
+                <div class="card__body">
+                  <div class="card__image-wrapper"><img src="assets/image/board.png" alt="board"></div>
+                  <div class="card__content-container">
+                    <p class="card__title">efsオイル</p>
+                    <div class="card__text-wrapper">
+                      <div>
+                        <p class="card__detail">内容量 ○○○○○○</p>
+                        <div class="card__price-wrapper"><span class="card__price">0,000</span>
+                          <div><span class="card__tax">(税込)</span><span class="card__yen">円</span></div>
+                        </div>
+                      </div>
+                      <div class="card__shipping-wrapper"><span>しかも</span>
+                        <p class="card__shipping">送料<br>無料</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <button class="button"> <img class="button__icon" src="assets/image/cart.svg" alt="cart"><span class="button__text">カートに入れる</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">efs corporation</p>
     </footer>
-    <script src="assets/js/circletype.min.js"></script>
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
